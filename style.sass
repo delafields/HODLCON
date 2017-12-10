@@ -1,0 +1,188 @@
+html,
+body
+	font: 14px/1.21 'Helvetica Neue', arial, sans-serif
+	font-weight: 400
+	margin: 0
+
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Covered+By+Your+Grace|Open+Sans:400,700')
+
+$lvl1: #FFFFFF
+$lvl2: #F44336
+$lvl3: #FFEB3B
+$lvl4: #4CAF50
+$lvl5: #2196F3
+$level-colors: $lvl1, $lvl2, $lvl3, $lvl4, $lvl5
+
+@mixin font-n-center
+	text-align: center
+	font-family: 'Open Sans', sans-serif
+
+/********************
+		Header
+/********************
+#header
+	margin-top: 40px
+	@include font-n-center
+
+/********************
+		LevelBox
+/********************
+#levels
+	z-index: 2
+	position: fixed
+	top: 0
+	display: flex
+	width: 100%
+
+.level
+	height: 20px
+	text-align: center
+	width: 20%
+
+@each $color in $level-colors
+	$i: index($level-colors, $color)
+	.level:nth-of-type(#{$i})
+		background: $color
+		border-bottom: 5px solid darken($color, 10%)
+
+/********************
+		HackList
+/********************
+@mixin hacks-width
+	width: 90%
+	margin: 0 5%
+
+/* Container */
+.hacklist-container
+	margin-top: 40px
+
+/* Header */
+@each $color in $level-colors
+	$i: index($level-colors, $color)
+	.hack-header-container.hack-level-#{$i}:after
+		content: ''
+		position: absolute
+		width: 30px
+		height: 97%
+		left: 0
+		background: darken($color, 5%)
+		border-left: 2px solid darken($color, 20%)
+		border-top: 2px solid darken($color, 20%)
+		//.hack-level-#{$i}
+			border-left: 30px solid darken($color, 10%)
+	.hack-header-container.hack-level-#{$i}:before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 5px
+		border-top: 2px solid darken($color, 20%)
+		background: darken($color, 5%)
+		top: 0
+		left: 0
+		//background: linear-gradient(to right, darken($color, 5%), lighten($color, 40%), white)
+
+	.hack-body-container.hack-level-#{$i}:before
+		content: ''
+		position: absolute
+		width: 30px
+		height: 100%
+		top: 0
+		left: 0
+		background: darken($color, 5%)
+		border-left: 2px solid darken($color, 20%)
+
+.hack-header-container
+	display: flex
+	align-items: center
+	cursor: pointer
+	position: relative
+	@include hacks-width
+
+.hack-header-name
+	width: 50%
+	margin-left: 35px
+	@include font-n-center
+
+.hack-header-date
+	width: 30%
+	@include font-n-center
+
+.hack-header-amount
+	width: 20%
+	@include font-n-center
+
+/* Body */
+.hack-body-container
+	@include hacks-width
+	font-family: 'Open Sans', sans-serif
+	padding-top: 10px
+	padding-left: 40px
+	position: relative
+
+.hack-body-link
+	color: #00B8D4
+	font-weight: bold
+	text-decoration: none
+	&:hover, &:visited, &:active
+		color: #6200EA
+		text-decoration: none
+
+.hack-body-image
+	width: 40%
+	max-width: 400px
+	min-width: 280px
+	display: block
+	margin-right: auto
+	margin-left: auto
+
+/********************
+		Whiteboard
+/********************
+#whiteboard-container
+	min-width: 300px
+	width: 90%
+	max-width: 600px
+	margin-left: auto
+	margin-right: auto
+
+#whiteboard
+	width: 100%
+
+
+.text-copy
+  fill: none
+  stroke: white
+  stroke-dasharray: 6% 29%
+  stroke-width: 5px
+  stroke-dashoffset: 0%
+  animation: stroke-offset 5.5s infinite linear
+
+
+.text-copy:nth-child(1)
+  stroke: #4D163D
+  animation-delay: -1
+
+
+.text-copy:nth-child(2)
+  stroke: #840037
+  animation-delay: -2s
+
+
+.text-copy:nth-child(3)
+  stroke: #BD0034
+  animation-delay: -3s
+
+
+.text-copy:nth-child(4)
+  stroke: #BD0034
+  animation-delay: -4s
+
+
+.text-copy:nth-child(5)
+  stroke: #FDB731
+  animation-delay: -5s
+
+
+@keyframes stroke-offset
+  100%
+		stroke-dashoffset: -35%
