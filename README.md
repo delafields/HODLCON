@@ -1,4 +1,4 @@
 # HODLCON
-###### **H**~old~ O~n~ ~for~ D~ear~ L~ife~ ~readiness~ **CON**~dition~
+###### **H**<sub>old<sub/> O<sub>n<sub/> <sub>for<sub/> D<sub>ear<sub/> L<sub>ife<sub/> <sub>readiness<sub/> **CON**<sub>dition<sub/>
 ---
 ###### Documenting hacks in the cryptocurrency space
