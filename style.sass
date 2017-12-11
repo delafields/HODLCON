@@ -24,9 +24,9 @@ $level-colors: $lvl1, $lvl2, $lvl3, $lvl4, $lvl5
 	margin-top: 40px
 	@include font-n-center
 
-/********************
-		LevelBox
-/********************
+/**********************************
+			LevelBox (fixed top bar)
+/**********************************
 #levels
 	z-index: 2
 	position: fixed
@@ -39,24 +39,23 @@ $level-colors: $lvl1, $lvl2, $lvl3, $lvl4, $lvl5
 	text-align: center
 	width: 20%
 
+// Colors each
 @each $color in $level-colors
 	$i: index($level-colors, $color)
 	.level:nth-of-type(#{$i})
 		background: $color
 		border-bottom: 5px solid darken($color, 10%)
 
-/********************
-		HackList
-/********************
-@mixin hacks-width
-	width: 90%
-	margin: 0 5%
+/**********************************
+		HackList (Collapsible Cards)
+/**********************************
 
 /* Container */
 .hacklist-container
-	margin-top: 40px
+	margin-top: 150px
 
 /* Header */
+// Thick left border on header (main then dark border)
 @each $color in $level-colors
 	$i: index($level-colors, $color)
 	.hack-header-container.hack-level-#{$i}:after
@@ -68,8 +67,7 @@ $level-colors: $lvl1, $lvl2, $lvl3, $lvl4, $lvl5
 		background: darken($color, 5%)
 		border-left: 2px solid darken($color, 20%)
 		border-top: 2px solid darken($color, 20%)
-		//.hack-level-#{$i}
-			border-left: 30px solid darken($color, 10%)
+
 	.hack-header-container.hack-level-#{$i}:before
 		content: ''
 		position: absolute
@@ -79,24 +77,14 @@ $level-colors: $lvl1, $lvl2, $lvl3, $lvl4, $lvl5
 		background: darken($color, 5%)
 		top: 0
 		left: 0
-		//background: linear-gradient(to right, darken($color, 5%), lighten($color, 40%), white)
-
-	.hack-body-container.hack-level-#{$i}:before
-		content: ''
-		position: absolute
-		width: 30px
-		height: 100%
-		top: 0
-		left: 0
-		background: darken($color, 5%)
-		border-left: 2px solid darken($color, 20%)
 
 .hack-header-container
 	display: flex
 	align-items: center
 	cursor: pointer
 	position: relative
-	@include hacks-width
+	width: 90%
+	margin: 0 5%
 
 .hack-header-name
 	width: 50%
@@ -113,11 +101,35 @@ $level-colors: $lvl1, $lvl2, $lvl3, $lvl4, $lvl5
 
 /* Body */
 .hack-body-container
-	@include hacks-width
-	font-family: 'Open Sans', sans-serif
+	// 40px for border/left padding offset
+	width: calc(90% - 40px)
+	margin: 0 5% -10px 5%
 	padding-top: 10px
 	padding-left: 40px
+	font-family: 'Open Sans', sans-serif
 	position: relative
+
+// Colors big left border & top body border
+@each $color in $level-colors
+	$i: index($level-colors, $color)
+	.hack-body-container.hack-level-#{$i}:before
+		content: ''
+		position: absolute
+		width: 30px
+		height: 110%
+		top: 0
+		left: 0
+		background: darken($color, 5%)
+		border-left: 2px solid darken($color, 20%)
+
+	.hack-body-container.hack-level-#{$i}:after
+		content: ''
+		position: absolute
+		width: calc(100% - 5px)
+		height: 5px
+		top: 0
+		right: 0
+		background: darken($color, 5%)
 
 .hack-body-link
 	color: #00B8D4
@@ -148,41 +160,6 @@ $level-colors: $lvl1, $lvl2, $lvl3, $lvl4, $lvl5
 #whiteboard
 	width: 100%
 
-
-.text-copy
-  fill: none
-  stroke: white
-  stroke-dasharray: 6% 29%
-  stroke-width: 5px
-  stroke-dashoffset: 0%
-  animation: stroke-offset 5.5s infinite linear
-
-
-.text-copy:nth-child(1)
-  stroke: #4D163D
-  animation-delay: -1
-
-
-.text-copy:nth-child(2)
-  stroke: #840037
-  animation-delay: -2s
-
-
-.text-copy:nth-child(3)
-  stroke: #BD0034
-  animation-delay: -3s
-
-
-.text-copy:nth-child(4)
-  stroke: #BD0034
-  animation-delay: -4s
-
-
-.text-copy:nth-child(5)
-  stroke: #FDB731
-  animation-delay: -5s
-
-
-@keyframes stroke-offset
-  100%
-		stroke-dashoffset: -35%
+/********************
+			Wizard (Axed)
+/********************
