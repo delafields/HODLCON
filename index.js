@@ -1,7 +1,7 @@
 import './style';
 import { Component } from 'preact';
 import moment from 'moment';
-import { hacks } from './hacks';
+import { hacks, lastUpdate } from './hacks';
 
 import Header from './components/Header';
 import Whiteboard from './components/Whiteboard';
@@ -14,7 +14,8 @@ export default class App extends Component {
 		this.state = {
 			today: '',
 			lastHack: '',
-			diffInDays: ''
+			diffInDays: '',
+			lastUpdate
 		};
 	}
 
@@ -32,7 +33,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="container">
-				<Header />
+				<Header lastUpdate={this.state.lastUpdate} />
 				<Whiteboard daysSinceLastHack={this.state.diffInDays} />
 				<LevelBox />
 				<HackList />

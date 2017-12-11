@@ -1,5 +1,7 @@
+export const lastUpdate = 'December 10th, 2017';
+
 export const hacks = [
-	/*
+	/* TEMPLATE
   {
     name: '',
     amount: 0,
@@ -11,9 +13,9 @@ export const hacks = [
 	.hack-body-image for pix
   */
 	{
-		name: 'Bitcoin protocol hack, 184 billion Bitcoins created',
-		date: [2007, 3, 28],
-		amount: 1,
+		name: 'Enigma ICO hacked',
+		date: [2017, 8, 20],
+		amount: 500000,
 		amountAbbreviated: '1m',
 		description: `
 		<p>Lorem ipsum dolor sit <a href="www.google.com" class="hack-body-link"> amet</a>, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
@@ -32,7 +34,7 @@ export const hacks = [
 	},
 	{
 		name: 'Test',
-		amount: 2,
+		amount: 200000,
 		amountAbbreviated: '1m',
 		date: [2007, 3, 28],
 		description: `
@@ -41,7 +43,7 @@ export const hacks = [
 	},
 	{
 		name: 'Test',
-		amount: 3,
+		amount: 3000000,
 		amountAbbreviated: '1m',
 		date: [2007, 3, 28],
 		description:
@@ -49,7 +51,7 @@ export const hacks = [
 	},
 	{
 		name: 'Test',
-		amount: 4,
+		amount: 40000000,
 		amountAbbreviated: '1m',
 		date: [2007, 3, 28],
 		description:
@@ -57,7 +59,7 @@ export const hacks = [
 	},
 	{
 		name: 'Test',
-		amount: 5,
+		amount: 500000000,
 		amountAbbreviated: '1m',
 		date: [2007, 3, 28],
 		description:

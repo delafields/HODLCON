@@ -3,6 +3,13 @@ import moment from 'moment';
 import Collapsible from 'react-collapsible';
 import { hacks } from '../hacks';
 
+const amount = {
+	hundredThousand: 100000,
+	oneMillion: 1000000,
+	tenMillion: 10000000,
+	hundredMillion: 100000000
+};
+
 const CollapseHeader = ({
 	hackName,
 	hackDate,
@@ -10,15 +17,17 @@ const CollapseHeader = ({
 	hackAmountAbbreviated
 }) => {
 	let levelColorHeader = 'hack-header-container ';
-	if (hackAmount === 1) {
+	let { hundredThousand, oneMillion, tenMillion, hundredMillion } = amount;
+	/* Compare amount, get 'level' for coloring */
+	if (hackAmount <= hundredThousand) {
 		levelColorHeader += 'hack-level-1';
-	} else if (hackAmount == 2) {
+	} else if (hackAmount >= hundredThousand && hackAmount < oneMillion) {
 		levelColorHeader += 'hack-level-2';
-	} else if (hackAmount == 3) {
+	} else if (hackAmount >= oneMillion && hackAmount < tenMillion) {
 		levelColorHeader += 'hack-level-3';
-	} else if (hackAmount == 4) {
+	} else if (hackAmount >= tenMillion && hackAmount < hundredMillion) {
 		levelColorHeader += 'hack-level-4';
-	} else if (hackAmount == 5) {
+	} else if (hackAmount >= hundredMillion) {
 		levelColorHeader += 'hack-level-5';
 	} else {
 		levelColorHeader = ' ';
@@ -41,15 +50,18 @@ const CollapseHeader = ({
 
 const CollapseBody = ({ content, hackAmount }) => {
 	let levelColorBody = 'hack-body-container ';
-	if (hackAmount === 1) {
+	let { hundredThousand, oneMillion, tenMillion, hundredMillion } = amount;
+
+	/* Compare amount, get 'level' for coloring */
+	if (hackAmount <= hundredThousand) {
 		levelColorBody += 'hack-level-1';
-	} else if (hackAmount == 2) {
+	} else if (hackAmount >= hundredThousand && hackAmount < oneMillion) {
 		levelColorBody += 'hack-level-2';
-	} else if (hackAmount == 3) {
+	} else if (hackAmount >= oneMillion && hackAmount < tenMillion) {
 		levelColorBody += 'hack-level-3';
-	} else if (hackAmount == 4) {
+	} else if (hackAmount >= tenMillion && hackAmount < hundredMillion) {
 		levelColorBody += 'hack-level-4';
-	} else if (hackAmount == 5) {
+	} else if (hackAmount >= hundredMillion) {
 		levelColorBody += 'hack-level-5';
 	} else {
 		levelColorBody = ' ';
