@@ -3,10 +3,10 @@ export const lastUpdate = 'December 10th, 2017';
 export const hacks = [
 	/* TEMPLATE
   {
-    name: '',
-    amount: 0,
-		amountAbbreviated: '1.1m',
-    date: '',
+    name: '', Keep it short
+    amount: 0, Integer
+		amountAbbreviated: '1.1m', < 4 #s
+    date: '', [year, month, day]
     description: ''
   }
 	.hack-body-link for links

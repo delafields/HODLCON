@@ -1,4 +1,5 @@
-import './style';
+import './styles/style';
+import './styles/normalize';
 import { Component } from 'preact';
 import moment from 'moment';
 import { hacks, lastUpdate } from './hacks';
@@ -29,6 +30,8 @@ export default class App extends Component {
 			diffInDays
 		});
 	}
+
+	getHacks() {}
 
 	render() {
 		return (
