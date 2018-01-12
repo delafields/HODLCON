@@ -591,7 +591,7 @@ export const hacks = [
 			</span>
 		</p>
 		<p>
-			The community responded in a lengthy <a class="hack-body-link" href="https://www.reddit.com/r/ethereum/comments/4oiqj7/critical_update_re_dao_vulnerability/>Reddit thread</a>:
+			The community responded in a lengthy <a class="hack-body-link" href="https://www.reddit.com/r/ethereum/comments/4oiqj7/critical_update_re_dao_vulnerability" />Reddit thread</a>:
 			<span class="hack-body-quote">
 				The involvement of the ethereum foundation in the DAO has been and is a mistake. As I see it ethereum is supposed to be the foundational infrastructure upon which a flurry of projects and experiments are supposed to blossom, and in order for them to blossom they need a foundation that is strong, and that has integrity in the face of challenges. The hard fork proposal is a compromise that ruins that integrity and signals that projects like the DAO can influence the underlying foundation to their own advantage. To me that is totally unacceptable and is a departure from the principles that drew me to ethereum.
 			</span>
