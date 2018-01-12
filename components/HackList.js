@@ -84,6 +84,7 @@ const HackList = () => {
 							hackName={hack.name}
 							hackAmount={hack.amount}
 							hackAmountAbbreviated={hack.amountAbbreviated}
+							hackDate={hack.date}
 						/>
 					}
 					transitionTime={200}
