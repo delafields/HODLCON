@@ -460,7 +460,7 @@ export const hacks = [
 			<b><u>The Aftermath</b></u>:
 		</p>
 		<p>
-			On April 3, 2017, Bitfinex announced it would buy <a class="hack-body-link" href="https://www.bitfinex.com/posts/198"> back all of its BFX "hack" tokens</a> at face vvalue, reimbursing the lost funds.
+			On April 3, 2017, Bitfinex announced it would buy <a class="hack-body-link" href="https://www.bitfinex.com/posts/198"> back all of its BFX "hack" tokens</a> at face value, reimbursing the lost funds.
 		</p>
 		</br>
 		`
@@ -555,7 +555,7 @@ export const hacks = [
 				A software fork has been proposed, (with NO ROLLBACK; no transactions or blocks will be “reversed”) which will make any transactions that make any calls/callcodes/delegatecalls that reduce the balance of an account with code hash0x7278d050619a624f84f51987149ddb439cdaadfba5966f7cfaea7ad44340a4ba (ie. the DAO and children) lead to the transaction (not just the call, the transaction) being invalid …
 			</span>
 			<span class="hack-body-quote">
-				"Miners and mining pools should resume allowing transactions as normal, wait for the soft fork code and stand ready to download and run it if they agree with this path forward for the Ethereum ecosystem. DAO token holders and ethereum users should sit tight and remain calm. Exchanges should feel safe in resuming trading ETH."
+				Miners and mining pools should resume allowing transactions as normal, wait for the soft fork code and stand ready to download and run it if they agree with this path forward for the Ethereum ecosystem. DAO token holders and ethereum users should sit tight and remain calm. Exchanges should feel safe in resuming trading ETH.
 			</span>
 		</p>
 		<p>
@@ -579,31 +579,31 @@ export const hacks = [
 		<p>
 			Later, through a third-party, the attacker claimed (s)he would put a stop to the "theft" of their property by rewarding miners who didn't go along with the proposed fork.
 			<span class="hack-body-quote">
-				"[S]oon we will have a smart contract to reward miners who oppose the soft fork and mines the transaction. 1m ETH + 100 BTC will be shared with miners."
+				[S]oon we will have a smart contract to reward miners who oppose the soft fork and mines the transaction. 1m ETH + 100 BTC will be shared with miners.
 			</span>
 		</p>
 		<p>
 			Then a more aggressive proposal came forth: a hard fork. DAO lead Stephan Tual on the hard fork:
 			<span class="hack-body-quote">
-				"By 4pm local time, the consensus was that should a soft fork be deployed within 27 days, the attacker would not be able to retrieve the funds he had stashed into a child DAO.
+				By 4pm local time, the consensus was that should a soft fork be deployed within 27 days, the attacker would not be able to retrieve the funds he had stashed into a child DAO.
 				A subsequent hard fork could even return all ether, including the DAO’s ‘extraBalance’ and the stolen funds, back into a smart contract. That smart contract would contain a single function: withdraw().
-				This would make it possible for everyone who participated in the DAO to withdraw their funds: thanks to the support of the miners, and because nothing had been spent so far, nothing would be lost."
+				This would make it possible for everyone who participated in the DAO to withdraw their funds: thanks to the support of the miners, and because nothing had been spent so far, nothing would be lost.
 			</span>
 		</p>
 		<p>
-			The community responded in a lengthy <a class="hack-body-link href="https://www.reddit.com/r/ethereum/comments/4oiqj7/critical_update_re_dao_vulnerability/">Reddit thread</a>:
+			The community responded in a lengthy <a class="hack-body-link" href="https://www.reddit.com/r/ethereum/comments/4oiqj7/critical_update_re_dao_vulnerability/>Reddit thread</a>:
 			<span class="hack-body-quote">
-				"The involvement of the ethereum foundation in the DAO has been and is a mistake. As I see it ethereum is supposed to be the foundational infrastructure upon which a flurry of projects and experiments are supposed to blossom, and in order for them to blossom they need a foundation that is strong, and that has integrity in the face of challenges. The hard fork proposal is a compromise that ruins that integrity and signals that projects like the DAO can influence the underlying foundation to their own advantage. To me that is totally unacceptable and is a departure from the principles that drew me to ethereum."
+				The involvement of the ethereum foundation in the DAO has been and is a mistake. As I see it ethereum is supposed to be the foundational infrastructure upon which a flurry of projects and experiments are supposed to blossom, and in order for them to blossom they need a foundation that is strong, and that has integrity in the face of challenges. The hard fork proposal is a compromise that ruins that integrity and signals that projects like the DAO can influence the underlying foundation to their own advantage. To me that is totally unacceptable and is a departure from the principles that drew me to ethereum.
 			</span>
 			Basically saying: Hard forks should be used for emergency modifications to the protocol, not for projects that run on Ethereum.
 		</p>
 		<p>
 			The Ethereum Foundation's involvement and promotion of the DAO proved to be conflicting.
 			<span class="hack-body-quote">
-				"I made a bad contract in the first days ETH was online and lost 2K ETH with it, can I also get it back? Thanks!"
+				I made a bad contract in the first days ETH was online and lost 2K ETH with it, can I also get it back? Thanks!
 			</span>
 			<span class="hack-body-quote">
-				"Ethereum worked exactly as intended. I don’t believe software should be updated when it works exactly as intended. You assume the risks of your investment. If you don’t understand your investment, you assume unknown risk. Anything else is a bailout by a central authority, i.e. the antithesis of the crypto world. In a related way, this is why Lehman Brothers was allowed to fail – because the deal is the deal, and if you bend the rules for a particular player, all other players will want special treatment, too."
+				Ethereum worked exactly as intended. I don’t believe software should be updated when it works exactly as intended. You assume the risks of your investment. If you don’t understand your investment, you assume unknown risk. Anything else is a bailout by a central authority, i.e. the antithesis of the crypto world. In a related way, this is why Lehman Brothers was allowed to fail – because the deal is the deal, and if you bend the rules for a particular player, all other players will want special treatment, too.
 			</span>
 		</p>
 		<p>
@@ -668,6 +668,7 @@ export const hacks = [
 			<span class="hack-body-quote">
 				“Bitstamp has lost customers, including major clients engaged in providing merchant services in Bitcoin, and has suffered significant damage to its reputation, which we are unable to quantify exactly at this point, but which we believe exceeds $2 million.”
 			</span>
+		</p>
 		</br>
 		`
 	},
