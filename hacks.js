@@ -1,4 +1,4 @@
-export const lastUpdate = 'January 11th, 2018';
+export const lastUpdate = 'January 26th, 2018';
 
 export const hacks = [
 	/* TEMPLATE
@@ -16,6 +16,60 @@ export const hacks = [
 	.hack-body-link for links
 	.hack-body-image for pix
   */
+	{
+		name: 'Coincheck Hack',
+		date: [2018, 0, 26],
+		amount: 500000000,
+		amountAbbreviated: '500m',
+		description: `
+			<p>
+				Japanese exchange Coincheck, one of the largest in the country, got fleeced for 523 million NEM(XEM) coins, worth around $534 million at the time.
+			</p>
+			<p>
+				<b><u>The Hack</b></u>:
+			</p>
+			<p>
+				A malicious actor stole the private key to Coincheck's NEM hot wallet, enabling them to drain the funds.
+			</p>
+			<p>
+				500 million coins at an estimated value of ~550 million were stored....<i>on a hot wallet</i>....
+			</p>
+			<p>
+				According to company reps, the exchanges security differs between coins and <i>"security standards were not low,"</i>. They specifically identified BTC as being held in cold storage at a multisig address and ETH in a cold storage non-multisig address, as insight to their security policy.
+			</p>
+			<p>
+				<b><u>The Response</b></u>:
+			</p>
+			<p>
+				The <i>"inappropriate movement of funds"</i> was reported to the Japanese police and Financial Services Agency the same day. At the time of the hack, the exchange was not registered with the Financial Services Agency (but of course said that they planned to do so post-hack).
+			</p>
+			<p>
+				Shortly after contacting the law, the company <a class="hack-body-link" href="https://coincheck.com/en/blog/4673"> halted all withdrawals</a>, deposits, and trading of NEM. In the following hour (probably after seeing the magnitude of the hack), the exchange suspended the withdrawal of all cryptocurrencies and yen, later restricting the trading of all cryptocurrencies albeit BTC.
+			</p>
+			<p>
+				Further, the company stated that it knew the address of the stolen NEM and would make attempts to track the culprits.
+			</p>
+			<p>
+				At a press conference that same day, Coincheck did not disclose the number of affected users but did express a desire to refund all of the stolen funds; adding that the worst-case scenario would be that the funds would never be returned.
+			</p>
+			<p>
+				As for the question of insolvency, the exchange stated that 'in principle' they planned to keep operating.
+			</p>
+			<p>
+				<b><i>Note</b></i>:
+			</p>
+			<p>
+				While the non-real $ amount of the Coincheck hack exceeded that of Mt. Gox's, this had a much damper affect on the market.
+			</p>
+			<p>
+				Following Coincheck's announcement, most tokens took a tumble but saw recovery in the following day. Compare this to Mt. Gox where the market took a two full years to recover.
+			</p>
+			<p>
+				This is due solely to the market's capitalization gains. The Mt. Gox hack represented about ~5% of aggregate cryptocurrencies contrast this to the Coincheck theft at ~0.25%.
+			</p>
+			</br>
+		`
+	},
 	{
 		name: 'Ledger Hardware Wallet MiM Scam',
 		date: [2018, 0, 5],
@@ -679,7 +733,7 @@ export const hacks = [
 		amountAbbreviated: '473m',
 		description: `
 		<p>
-			The grand daddy of them all. In the largest disaster to date in the cryptocurrency world, about 630k BTC valued at $473m were hacked from exchange Mt. Gox over a period of several years.
+			The first big bang. In the first massive exchange hack in cryptocurrency, about 630k BTC valued at $473m were hacked from exchange Mt. Gox over a period of several years.
 		</p>
 		<p>
 			Prior to the attack, Mt. Gox was the largest exchange in the world, at one point handling over 70% of Bitcoin transactions.
