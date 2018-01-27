@@ -54,7 +54,9 @@ const BrokenSVG = props => {
       </text>
       <path d="M318.53 142.36c5.3 0 9.6 4.29 9.6 9.59v76.73c0 5.3-4.3 9.6-9.6 9.6H135.22c-5.3 0-9.59-4.3-9.59-9.6v-76.73c0-5.3 4.29-9.59 9.59-9.59h183.31z" id="b16SRpjNlM"/>
 			<text id="a1grCFTCo8" x="168.75" y="164.06" font-size="97" font-family="Covered By Your Grace" letter-spacing="1.94" alignment-baseline="before-edge" transform="translate(-7.584 -43.964)" style="line-height:100%" dominant-baseline="text-before-edge">
-        <tspan classname="svg-days" x="168.75" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge">${props.daysSinceLastHack}</tspan>
+        <tspan classname="svg-days" x="180.75" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge">${
+					props.daysSinceLastHack
+				}</tspan>
       </text>
     </defs>
     <g clip-path="url(#clipg8yX4VVceQ)">
