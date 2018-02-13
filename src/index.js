@@ -31,8 +31,6 @@ export default class App extends Component {
 		});
 	}
 
-	getHacks() {}
-
 	render() {
 		return (
 			<div id="container">
