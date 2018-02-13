@@ -1,7 +1,7 @@
 import preact from 'preact';
 import InlineSVG from 'svg-inline-react';
 
-const BrokenSVG = props => {
+const RawWhiteboardSVG = props => {
 	const svgSource = `
   <svg id="whiteboard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 350">
     <defs>
@@ -139,4 +139,4 @@ const BrokenSVG = props => {
 	return <InlineSVG id="whiteboard" src={svgSource} />;
 };
 
-export default BrokenSVG;
+export default RawWhiteboardSVG;
